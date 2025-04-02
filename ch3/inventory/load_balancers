@@ -1,2 +1,4 @@
-[load_balancers]
-lb-001.local
+---
+load_balancers:
+  hosts:
+    lb-001.local:

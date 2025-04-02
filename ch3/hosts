@@ -1,6 +1,9 @@
-[webservers]
 web-001.local
 web-002 ansible_host=192.168.56.112 ansible_port=22
+
+[webservers]
+web-001.local
+web-002 ansible_host=192.168.56.112
 
 [webservers:vars]
 http_port=8080
