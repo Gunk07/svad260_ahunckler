@@ -14,3 +14,4 @@
 
     - name: Reboot the host
       reboot:
+      when: upgrade_result.changed
