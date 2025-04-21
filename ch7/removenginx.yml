@@ -1,0 +1,6 @@
+---
+- name: Uninstall nginx
+  apt:
+    name: nginx
+    state: absent
+    autoremove: yes
