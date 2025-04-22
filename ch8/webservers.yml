@@ -15,6 +15,7 @@
         timeout: 5
       connection: local
       listen: "Reload web services"
+
   tasks:
     - name: Ensure nginx is installed
       apt:
@@ -26,7 +27,7 @@
         src: nginx-default.j2
         dest: /etc/nginx/sites-available/default
         mode: "0644"
-      notify: "Reload nginx"
+      notify: "Reload web services"
 
     - name: Push website content to the web root
       template:
